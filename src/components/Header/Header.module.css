@@ -1,0 +1,153 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  z-index: 111;
+  /* opacity: var(--header-opacity, 0); */
+  transition: top 1s ease, opacity 1s ease;
+}
+
+.headerStart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px;
+}
+
+.searchElements {
+  display: none;
+}
+
+.headerStart svg {
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.menuItems {
+  display: flex;
+  align-items: center;
+  /* gap: 75px; */
+  color: #fff;
+  justify-content: space-between;
+  /* justify-content: space-evenly; or space-evenly */
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+.dropDown {
+  display: none;
+}
+
+.menuItems > li {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  /* margin: 0 37.5px; Half of the previous gap to distribute it evenly on both sides */
+  margin: 0; /* Half of the previous gap to distribute it evenly on both sides */
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: currentColor;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    opacity: 0;
+    transition: 0.3s ease-out;
+  }
+}
+
+.logo img {
+  height: 15px;
+  width: 100%;
+  object-fit: contain;
+}
+.mobileMenu {
+  display: none;
+}
+/* Tempropery off */
+.search {
+  display: none;
+}
+.menu {
+  display: none;
+}
+@media (max-width: 1250px) {
+  .menuItems {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .mobileMenu {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    background: white;
+    width: 100%;
+    padding: 0 50px;
+    opacity: 0;
+    visibility: visible;
+    opacity: 1;
+    height: 0;
+    overflow: hidden;
+
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+  }
+
+  .mobileMenu li {
+    font-size: 12px;
+    padding: 10px 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background-color: currentColor;
+      position: absolute;
+      left: -12px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      opacity: 0;
+      transition: 0.3s ease-out;
+    }
+  }
+
+  .mobileMenu.active {
+    left: 0px;
+    height: 327px;
+    padding: 50px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .headerStart {
+    padding-inline: 5%;
+    justify-content: end;
+  }
+}

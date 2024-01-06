@@ -1,0 +1,97 @@
+Question,Answer,QuestionArr
+return the CTA which usually phrases like 'to call or text the contact number for a consultation'.,Call Now For A Consultation 908-264-9331 202-862-4330,paragraph
+"
+        "" Find 3 advantages that sets this firm apart. organize the objects in this way {
+            ""title"": 3-4 word title of the advantage,
+            ""content"": 2 sentences talking about the advantage.
+            }
+            
+           here is an example of an output: {
+    ""title"": ""Nationwide Resources"",
+    ""content"": ""The Cochran Firm has offices nationwide with a team of experienced and aggressive personal injury attorneys and criminal defense lawyers. They offer tireless and effective legal representation across the country.""
+  },
+  {
+    ""title"": ""Diverse Specializations"",
+    ""content"": ""Attorneys at The Cochran Firm specialize in a variety of practice areas including personal injury, civil rights, medical malpractice, and employment discrimination. This allows them to handle a wide range of cases with expert knowledge.""
+  },
+  {
+    ""title"": ""Legacy of Excellence"",
+    ""content"": ""Founded by legendary attorney Johnnie L. Cochran, Jr., The Cochran Firm continues his mission of providing justice to the wronged and giving a voice to the silenced. They are committed to restoring justice and advocating for individual rights.""
+  }
+        
+        ","[
+  {
+    ""title"": ""Strong Recommendations"",
+    ""content"": ""Cashdan & Kane, PLLC is frequently recommended by former clients and professional colleagues. Firm partners David Cashdan and Michael Kane have each earned an AV Preeminent® Peer Review Rating by Martindale-Hubbell®.""
+  },
+  {
+    ""title"": ""Assertive Representation"",
+    ""content"": ""The firm aggressively pursues successful results to resolve cases promptly and favorably. They understand the toll employment issues can take and work to address them efficiently.""
+  },
+  {
+    ""title"": ""Caring Advocacy"",
+    ""content"": ""Cashdan & Kane, PLLC provides comprehensive labor and employment representation in a caring, professional manner. They build lasting relationships by helping clients anticipate long-term consequences.""
+  }
+]",detailsData
+What is the address of this firm?,"226 St. Paul Street, Westfield, New Jersey 07090",address
+What is the phone number of this firm?,908-264-9331,phoneNumber
+What is the contact email of this firm?,null,email
+"In an array, return in UPPERCASE the navigation items of this site. If the markdown contains several levels, only return the highest level.","[""HOME"", ""ABOUT US"", ""LABOR & EMPLOYMENT"", ""N.J. EMPLOYMENT LAW"", ""D.C. EMPLOYMENT LAW"", ""BLOG"", ""LOCATIONS"", ""CONTACT US""]",linkNames
+What is the name of this company?,"Cashdan & Kane, PLLC",companyName
+What is the subheading of this company?,Experienced. Knowledgeable. Proficient.,subHeading
+"Near the top of the site, there will a paragraph description about this firm, return it.","Labor & employment attorneys serving New Jersey and Washington, D.C. with over 45 years of experience",valueProp
+What is the CTA close to the top of the site?,908-264-9331 202-862-4330,CTA
+"Return 9 practice areas of this law firm, in an array.","[""Discrimination & Sexual Harassment"", ""Wrongful Termination"", ""Sarbanes-Oxley Act"", ""Severance Agreements & Employment Contracts"", ""Wage & Hour Law in N.J."", ""Overtime Law in N.J."", ""Workplace Harassment FAQs"", ""LAD Anti-Discrimination Provisions"", ""Conscientious Employee Protection Act (CEPA)""]",topics
+"
+        ( Return, in an array of objects, 4 names of lawyers and their titles. For example [
+            {
+                name: ""Carmen 'Jack' Giordano, Esq."",
+                position: ""Principal Attorney"",
+            },
+            {
+                name: ""Stefanie Behler Soriano, Esq."",
+                position: ""Associate Attorney"",
+            }]
+        
+        ","```json
+[
+    {
+        ""name"": ""David R. Cashdan"",
+        ""position"": ""Attorney""
+    },
+    {
+        ""name"": ""Michael G. Kane"",
+        ""position"": ""Attorney""
+    }
+]
+```",members
+ When is the firm open?,null,openHours
+"
+          Return 3 testimonials from this site. They should be in an array of objects, including text, author, location. For example """"[
+            {
+                text: ""Carmen was absolutely wonderful to work with. He was truly honest and I never felt taken advantage of. I can't recommend this law office and Carmen enough."",
+                author: ""Jaime Oliver"",
+                location: ""New York"",
+            },
+            {
+                text: ""Even after the case we still keep in contact for any question that we still might have, for people who do not speak English I recommend him, he makes sure that the person in the case understands everything that happens in their case."",
+                author: ""Atriz R"",
+                location: ""Manhattan, New York"",
+            }]""
+        ","[
+    {
+        text: ""Michael gave me some very valuable guidance in my legal matter."",
+        author: ""Alexander A"",
+        location: null
+    },
+    {
+        text: ""Mr. Kane is a patient listener, very knowledgeable about employment law, and I can trust him to clearly explain terminology and expectations throughout the process. He is compassionate, professional and very responsive to inquiries, and the office billing processes were seamless."",
+        author: ""Douglas Larsen"",
+        location: null
+    },
+    {
+        text: ""Went to this location and spoke with Michael Kane. He was a very nice guy and didn’t make me feel like I was doing something wrong by contacting an attorney. He was open to hearing everything that has been happening to me over the years and He was very honest and upfront throughout the various meetings that we’ve had. Mr. Kane stayed on top of deadlines,paperwork and meetings. He was also very flexible with payment which I know is very important to most ppl when they have to hire an attorney. All in all I would say that Mr. Kane is my go-to guy in the unfortunate event that I would need an attorney in the future."",
+        author: ""Kobe"",
+        location: null
+    }
+]",testimonalData

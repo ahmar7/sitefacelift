@@ -1,0 +1,45 @@
+.knowledge {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 100px 0;
+}
+.knowledgeLeft h5 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #99794c;
+  letter-spacing: 1.6px;
+  margin-bottom: 10px;
+}
+.knowledgeLeft h1 {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.knowledgeRight .button {
+  padding: 15px 25px;
+  margin-top: 25px;
+  color: black;
+}
+@media (max-width: 1200px) {
+  .knowledge {
+    display: flex;
+    max-width: 86%;
+    flex-direction: column;
+    margin: 100px auto;
+  }
+  .knowledgeLeft h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    line-height: 1.22449em;
+    font-weight: 400;
+  }
+  .knowledgeRight p {
+    margin-top: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .knowledge {
+    margin-bottom: 50px;
+  }
+}
